@@ -4,10 +4,11 @@ import Home from "./Home";
 import About from "./About";
 import Contacts from "./Contacts";
 import Projects from "./Projects";
-import { useState } from "react";
+import {createContext, useState, useEffect, useContext} from "react";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+  
   return (
     <>
       <Header />

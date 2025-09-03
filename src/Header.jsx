@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="bg-blue-900 text-3xl flex-wrap">
-      <nav>
-        <h2>Maina Kamweru</h2>
-        <ul>
-          <li>
+    <div>
+    <header className="bg-blue-900 dark:bg-gray-950 text-white shadow-md">
+      <nav className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center flex-wrap">
+        <h2 className="text-3xl font-bold mb-4 md:mb-0">Maina Kamweru</h2>
+        <ul className="flex flex-wrap justify-center md:space-x-8 space-x-4 text-lg">
+          <li >
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -22,6 +23,7 @@ function Header() {
         </ul>
       </nav>
     </header>
+    </div>
   );
 }
 
